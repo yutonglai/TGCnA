@@ -94,25 +94,9 @@ ggplot(data = datamelt, aes(x=variable, y=value)) + theme_bw() + geom_boxplot(ae
 #### #########################################################################################################################################################
 #### #### 2. Real Data Analysis #### #########################################################################################################################
 #### #########################################################################################################################################################
-	
-#### 2.a. Real data analysis, selected 10193 genes
-load("/mnt/myvolume/TempCoexNet/code/braindata.rdata")
-
-newdata = PreProcess(brain.table, log = T, 5, 1.5) # filter genes and log transform
-res.mtx = ResidMtx(newdata, numreps) #residual matrix (subtract mean)
-res.mtx = Normalize.res.mtx(res.mtx,numreps) #normalize (devide d1 and multiply sqrt(p))
-
-## Return correlation list for each time point
-correlationMatrix10193 = NULL
-correlationMatrix10193 = TGCN(tvec, numreps, res.mtx)
-
-## (Opotional) Return cluster list for each time point
-newdata10193 = as.data.frame(res.mtx)
-modres10193  = TGCN_Cluster(correlationMatrix10193, newdata10193)
-
-                                    
-#### 2.b. Real data analysis, selected 3141 genes
-load("/mnt/myvolume/TempCoexNet/code/mtx_Original.rdata") # 3141 genes
+                                  
+#### Real data analysis, 3141 genes
+load("braindata3141.rdata") # 3141 genes
 nt = length(numreps)
                                     
 # return the correlation matrix at each time point     
