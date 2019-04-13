@@ -50,24 +50,6 @@ load("Pure_t5_c5_r15_s40.rdata") # 40 times simulated data (5 time point, 5 clus
 # Pure_t15_c5_r15_s40[[3]]: The Adjusted Rand Index from TGCnA at each time point
 # Pure_t15_c5_r15_s40[[4]]: The Adjusted Rand Index from Naive method at each time point
 
-##### Frobenius Loss plot for the simulated data analysis
-testaFL = Pure_t5_c5_r15_s40[[1]]
-testbFL = Pure_t5_c5_r15_s40[[2]]
-
-confidencea1 = matrix(unlist(lapply(1:5, function(i) quantile(testaFL[,i], probs = seq(0.025, 0.975, 0.05)))),20,5)
-confidenceb1 = matrix(unlist(lapply(1:5, function(i) quantile(testbFL[,i], probs = seq(0.025, 0.975, 0.05)))),20,5)
-
-dataframePro     = data.frame(Time=1:5, ProMedian = colMedians(testaFL),   Prolower     = t(head(confidencea1, n=1)), Proupper     = t(tail(confidencea1, n=1)))
-dataframeNaive   = data.frame(Time=1:5, NaiveMedian = colMedians(testbFL), Naivelower   = t(head(confidenceb1, n=1)), Naiveupper   = t(tail(confidenceb1, n=1)))
-
-dataframe = cbind(dataframePro,dataframeNaive[,2:4])
-colnames(dataframe) = c("Time","ProMedian","Prolower","Proupper","NaiveMedian","Naivelower","Naiveupper")
-ggplot(data=dataframe,aes(x=Time, y=ProMedian)) + theme_bw() + labs(x="",y="",title="T=5 C=5 n=15") +
-       geom_line(aes(linetype=" TGCnA",x=Time, y=ProMedian)) + geom_ribbon(alpha=0.3,aes(ymax=Proupper, ymin=Prolower)) +
-       geom_line(aes(linetype="Naive",x=Time, y=NaiveMedian)) + geom_ribbon(alpha=0.3,aes(ymax=Naiveupper, ymin=Naivelower)) + 
-       labs(linetype="") + ylab("Frobenius loss") + expand_limits(y=0) +
-       theme(legend.position = "none", axis.title.y=element_text(size=10),  legend.key.width = unit(4,"line"),  legend.key.height = unit(2,"line"),  legend.text = element_text(size = 15),  plot.title=element_text(hjust=0,size=10))
-
 
 ##### Adjusted Rand Index plot for the simulated data analysis
 testaARI = PureTran_t5_c5_r15_s40[[3]]
