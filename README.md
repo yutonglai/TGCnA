@@ -28,6 +28,7 @@ numreps = c(15,15,15,15,15) # set the number of replication for each time point
 ## Return correlation list for each time point
 correlationMatrixSim = NULL
 correlationMatrixSim = TGCN(tvec, numreps, Data_t5_c5_r15)
+levelplot(correlationMatrixSim)
 
 ## (Opotional) Return module list for each time point
 newdataSim = as.data.frame(Data_t5_c5_r15)
@@ -55,6 +56,7 @@ y = log(y+1)
 ## Return correlation list for each time point
 correlationMatrixTran = NULL
 correlationMatrixTran = TGCN(tvec, numreps, y)
+levelplot(correlationMatrixTran)
 
 ## (Opotional) Return module list for each time point
 newdataTran = as.data.frame(y)
