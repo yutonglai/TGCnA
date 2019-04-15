@@ -69,6 +69,10 @@ for(tt in 1:length(tvec))
 }
 print(AdjRandIndexTran)
 ```
+Time |    T=1    |    T=2    |    T=3    |    T=4    |    T=5
+----:|:---------:|:---------:|:---------:|:---------:|:---------
+ ARI | 0.5166732 | 0.5875409 | 0.5554822 | 0.4629107 | 0.8039664
+
 ![corrlistT=3](https://user-images.githubusercontent.com/46899273/56168094-c4573880-5f9f-11e9-93c0-fe95de7430af.PNG)
 
 #### 4. Real data analysis
