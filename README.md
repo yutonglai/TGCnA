@@ -69,8 +69,8 @@ for(tt in 1:length(tvec))
 }
 print(AdjRandIndexTran)
 ```
-True                       |  Simulation               | Transformed simulation
-:-------------------------:|:-------------------------:|:-----------------------: 
+True             |  Simulation     | Transformed simulation
+:---------------:|:---------------:|:---------------: 
 ![corrlistTrueT=3](https://user-images.githubusercontent.com/46899273/56166928-6412c780-5f9c-11e9-93dc-3ae4d77ce5c0.PNG)  |  ![corrlistProT=3](https://user-images.githubusercontent.com/46899273/56166926-637a3100-5f9c-11e9-8cb0-97baae0e5f31.PNG) |
 ![corrlistProTranT=3](https://user-images.githubusercontent.com/46899273/56166927-6412c780-5f9c-11e9-9ba2-39314cf91438.PNG)
 
