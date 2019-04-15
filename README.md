@@ -1,13 +1,14 @@
 # Temporal Gene Coexpression Network Analysis Using A Low-rank plus Sparse Framework
 
-Jinyu Li, Yutong Lai, View ORCID ProfileChi Zhang, Qi Zhang
-doi: https://doi.org/10.1101/359612 
+Jinyu Li, Yutong Lai, Chi Zhang, Qi Zhang 
 
 ## overview
 
 Various gene network models with distinct physical nature have been widely used in biological studies. For temporal transcriptomic studies, the current dynamic models either ignore the temporal variation in the network structure or fail to scale up to a large number of genes due to severe computational bottlenecks and sample size limitation. On the other hand, correlation-based gene networks are more computationally more affordable, but have not been properly extended to gene expression time-course data.
 
 We propose Temporal Gene Coexpression Network (TGCN) for the transcriptomic time-course data. The mathematical nature of TGCN is the joint modeling of multiple covariance matrices across time points using a “low-rank plus sparse” framework, in which the network similarity across time points is explicitly modeled in the low-rank component. Using both simulations and a real data application, we showed that TGCN improved the covariance estimation loss and identified more robust and interpretable gene modules.
+
+## Related codes
 
 #### Source the function
 
