@@ -10,11 +10,11 @@ We propose Temporal Gene Coexpression Network (TGCN) for the transcriptomic time
 
 ## Related codes
 
-#### Source the function
+#### 1. Source the function
 
 source("functionsNew.R")
 
-#### Simulation analysis
+#### 2. Simulation analysis
 ```
 library(pdfCluster)
 
@@ -43,7 +43,7 @@ for(tt in 1:length(tvec))
 print(AdjRandIndex)
 ```
 
-#### Simulated data transformation
+#### 3. Transformed simulation analysis: transform the simulation data to count-type data, then redo the simulation
 ```
 n = nrow(Data_t5_c5_r15)*ncol(Data_t5_c5_r15)
 a = 20
@@ -70,7 +70,7 @@ for(tt in 1:length(tvec))
 print(AdjRandIndexTran)
 ```
 
-#### Real data analysis
+#### 4. Real data analysis
 ```
 load("braindata10193A.rds")
 load("braindata10193B.rds")
