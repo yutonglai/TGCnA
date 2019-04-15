@@ -83,8 +83,8 @@ Tran |0.6288305     |0.6471858     |0.6928232     |0.5391654     |0.4025173
 
 #### 4. Real data analysis
 ```
-load("braindata10193A.rds")
-load("braindata10193B.rds")
+readRDS("braindata10193A.rds")
+readRDS("braindata10193B.rds")
 
 ## data
 braindata10193 = rbind(braindata10193A, braindata10193B)
