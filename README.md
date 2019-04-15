@@ -75,7 +75,7 @@ Sim  |0.5166732     |0.5875409     |0.5554822     |0.4629107     |0.8039664
 Tran |0.6288305     |0.6471858     |0.6928232     |0.5391654     |0.4025173
 
 
-![corrlistT=3](https://user-images.githubusercontent.com/46899273/56168094-c4573880-5f9f-11e9-93c0-fe95de7430af.PNG)
+![corrlistT=3](https://user-images.githubusercontent.com/46899273/56169175-ebfbd000-5fa2-11e9-8aa0-5e11080ba864.PNG)
 
 #### 4. Real data analysis
 ```
