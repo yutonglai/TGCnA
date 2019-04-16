@@ -7,8 +7,9 @@ Jinyu Li, Yutong Lai, Chi Zhang, Qi Zhang
 Various gene network models with distinct physical nature have been widely used in biological studies. For temporal transcriptomic studies, the current dynamic models either ignore the temporal variation in the network structure or fail to scale up to a large number of genes due to severe computational bottlenecks and sample size limitation. On the other hand, correlation-based gene networks are more computationally more affordable, but have not been properly extended to gene expression time-course data.
 
 We propose Temporal Gene Coexpression Network (TGCN) for the transcriptomic time-course data. The mathematical nature of TGCN is the joint modeling of multiple covariance matrices across time points using a “low-rank plus sparse” framework, in which the network similarity across time points is explicitly modeled in the low-rank component. Using both simulations and a real data application, we showed that TGCN improved the covariance estimation loss and identified more robust and interpretable gene modules.
-![GeneCoexpression0](https://user-images.githubusercontent.com/46899273/56183896-d788f900-5fdd-11e9-80da-67e578c48dcc.jpg)
 
+![GeneCoexpression0](https://user-images.githubusercontent.com/46899273/56183896-d788f900-5fdd-11e9-80da-67e578c48dcc.jpg)
+##### Figure 1. Example of gene co-expression network (Carlos Prieto, Alberto Risueño, Celia Fontanillo, Javier De Las Rivas, 2008)}
 ## Related codes
 
 #### 1. Source the function
@@ -78,7 +79,7 @@ Tran |0.6288305     |0.6471858     |0.6928232     |0.5391654     |0.4025173
 
 
 ![corrlistT=3](https://user-images.githubusercontent.com/46899273/56169175-ebfbd000-5fa2-11e9-8aa0-5e11080ba864.PNG)
-##### Figure 1. The true correlation matrix (True), the recovered correlation matrix by TGCnA with simulation data (Sim) and transformed simulation data (Tran)
+##### Figure 2. The true correlation matrix (True), the recovered correlation matrix by TGCnA with simulation data (Sim) and transformed simulation data (Tran)
 
 #### 4. Real data analysis
 ```
