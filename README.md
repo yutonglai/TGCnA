@@ -88,7 +88,7 @@ readRDS("braindata10193B.rds")
 ## data
 braindata10193 = rbind(braindata10193A, braindata10193B)
 ```
-##### Table 2. The human BranSpan-RNA sequence data
+##### Table 2. The human BrainSpan-RNA sequence data
 GeneID / Sample |1        |2        |3        |4        |5        |6        |......  |524        
 ---------------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:------:|:--------
 ENSG00000000003 |5.226783 |4.658283 |4.345572 |4.841400 |4.392196 |3.970916 |......  |2.029566     
