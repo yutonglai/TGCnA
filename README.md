@@ -2,7 +2,7 @@
 
 Jinyu Li, Yutong Lai, Chi Zhang, Qi Zhang 
 
-## overview
+## Overview
 
 Various gene network models with distinct physical nature have been widely used in biological studies. For temporal transcriptomic studies, the current dynamic models either ignore the temporal variation in the network structure or fail to scale up to a large number of genes due to severe computational bottlenecks and sample size limitation. On the other hand, correlation-based gene networks are more computationally more affordable, but have not been properly extended to gene expression time-course data.
 
