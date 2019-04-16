@@ -64,15 +64,14 @@ AdjRandIndexTran = NULL
 for(tt in 1:length(tvec))	
     AdjRandIndexTran[tt] = adj.rand.index(Data_t5_c5_r15_modules_Tran[[tt]], Data_t5_c5_r15_modules_True[[tt]])
 ```
+![corrlistT=3](https://user-images.githubusercontent.com/46899273/56169175-ebfbd000-5fa2-11e9-8aa0-5e11080ba864.PNG)
+##### Figure 1. The true correlation matrix (True), the recovered correlation matrix by TGCnA with simulation data (Sim) and transformed simulation data (Tran)
+
 ##### Table 1. The Adjusted Rand Index for modules recovery by TGCnA with simulation data (Sim) and transformed simulation data (Tran)
 Data / Time |Time=1        |Time=2        |Time=3        |Time=4        |Time=5
 -----------:|:------------:|:------------:|:------------:|:------------:|:------------
 Sim         |0.5166732     |0.5875409     |0.5554822     |0.4629107     |0.8039664
 Tran        |0.6288305     |0.6471858     |0.6928232     |0.5391654     |0.4025173
-
-
-![corrlistT=3](https://user-images.githubusercontent.com/46899273/56169175-ebfbd000-5fa2-11e9-8aa0-5e11080ba864.PNG)
-##### Figure 1. The true correlation matrix (True), the recovered correlation matrix by TGCnA with simulation data (Sim) and transformed simulation data (Tran)
 
 #### 4. Real data analysis
 ```
