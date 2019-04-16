@@ -41,7 +41,6 @@ for(tt in 1:length(tvec))
 {		
 	AdjRandIndex[tt] = adj.rand.index(Data_t5_c5_r15_modules_Sim[[tt]], Data_t5_c5_r15_modules_True[[tt]])
 }
-print(AdjRandIndex)
 ```
 
 #### 3. Transformed simulation analysis: transform the simulation data to count-type data, then redo the simulation
@@ -68,7 +67,6 @@ for(tt in 1:length(tvec))
 {		
 	AdjRandIndexTran[tt] = adj.rand.index(Data_t5_c5_r15_modules_Tran[[tt]], Data_t5_c5_r15_modules_True[[tt]])
 }
-print(AdjRandIndexTran)
 ```
 ##### Table 1. The Adjusted Rand Index for modules recovery by TGCnA with simulation data (Sim) and transformed simulation data (Tran)
 Time |Time=1        |Time=2        |Time=3        |Time=4        |Time=5
