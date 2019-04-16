@@ -37,10 +37,8 @@ Data_t5_c5_r15_modules_Sim  = lapply(1:nt, function(tt) modresSim$modres[[tt]])
 
 ## Adjust Rand Index
 AdjRandIndex = NULL
-for(tt in 1:length(tvec))
-{		
-	AdjRandIndex[tt] = adj.rand.index(Data_t5_c5_r15_modules_Sim[[tt]], Data_t5_c5_r15_modules_True[[tt]])
-}
+for(tt in 1:length(tvec))	
+    AdjRandIndex[tt] = adj.rand.index(Data_t5_c5_r15_modules_Sim[[tt]], Data_t5_c5_r15_modules_True[[tt]])
 ```
 
 #### 3. Transformed simulation analysis: transform the simulation data to count-type data, then redo the simulation
@@ -63,10 +61,8 @@ Data_t5_c5_r15_modules_Tran  = lapply(1:nt, function(tt) modresTran$modres[[tt]]
 
 ## Adjust Rand Index
 AdjRandIndexTran = NULL
-for(tt in 1:length(tvec))
-{		
-	AdjRandIndexTran[tt] = adj.rand.index(Data_t5_c5_r15_modules_Tran[[tt]], Data_t5_c5_r15_modules_True[[tt]])
-}
+for(tt in 1:length(tvec))	
+    AdjRandIndexTran[tt] = adj.rand.index(Data_t5_c5_r15_modules_Tran[[tt]], Data_t5_c5_r15_modules_True[[tt]])
 ```
 ##### Table 1. The Adjusted Rand Index for modules recovery by TGCnA with simulation data (Sim) and transformed simulation data (Tran)
 Time |Time=1        |Time=2        |Time=3        |Time=4        |Time=5
