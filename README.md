@@ -43,6 +43,7 @@ for(tt in 1:length(tvec))
 
 #### 3. Transformed simulation analysis: transform the simulation data to count-type data, then redo the simulation
 ```
+## Data transformation
 n = nrow(Data_t5_c5_r15)*ncol(Data_t5_c5_r15)
 a = 20
 b = 0.2
