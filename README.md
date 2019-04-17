@@ -67,7 +67,7 @@ for(tt in 1:length(tvec))
 ```
 
 
-![corrlistT=3](https://user-images.githubusercontent.com/46899273/56169175-ebfbd000-5fa2-11e9-8aa0-5e11080ba864.PNG)
+![image](https://user-images.githubusercontent.com/46899273/56256117-fa261b00-608c-11e9-96a1-1a0e2f263008.png)
 ##### Figure 1. The true correlation matrix (True), the recovered correlation matrix by TGCnA with simulation data (Sim) and transformed simulation data (Tran)
 
 
