@@ -74,7 +74,7 @@ for(tt in 1:length(tvec))
 
 
 ![corrlistT=3](https://user-images.githubusercontent.com/46899273/56169175-ebfbd000-5fa2-11e9-8aa0-5e11080ba864.PNG)
-##### Figure 1. The true correlation matrix (True), the recovered correlation matrix by TGCnA with simulated continuous data data (Continuous) and counts data (Counts)
+##### Figure 1. The true correlation matrix (Truth), the recovered correlation matrix by TGCnA with simulated continuous data data (Continuous) and counts data (Counts)
 
 
 ##### Table 1. The Adjusted Rand Index for modules recovery by TGCnA with continous data (Continous) and counts data (Counts)
