@@ -73,7 +73,7 @@ for(tt in 1:length(tvec))
 ```
 
 
-![corrlistT=3](https://user-images.githubusercontent.com/46899273/56169175-ebfbd000-5fa2-11e9-8aa0-5e11080ba864.PNG)
+![image](https://user-images.githubusercontent.com/46899273/56257546-360faf00-6092-11e9-8f63-97cd68a73f95.png)
 ##### Figure 1. The true correlation matrix (Truth), the recovered correlation matrix by TGCnA with simulated continuous data data (Continuous) and counts data (Counts)
 
 
